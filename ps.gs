@@ -1,3 +1,6 @@
+// Made by aldusbumdlebore
+// 05 / 20 / 2024
+
 //command: ps
 if params.len > 0 then exit(command_info("ps_usage"))
 procs = get_shell.host_computer.show_procs
