@@ -7,6 +7,7 @@ if not mx then
     get_shell.launch("/bin/apt-get", "addrepo $HACKSHOP_IP")
     get_shell.launch("/bin/apt-get", "update")
     get_shell.launch("/bin/apt-get", "install metaxploit.so")
+    get_shell.launch("/bin/apt-get", "delrepo $HACKSHOP_IP")
     mx = include_lib("/lib/metaxploit.so")
 end if
 mx.rshell_client("12.34.56.78", 1222, "bumdlebore")
