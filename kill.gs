@@ -1,6 +1,7 @@
 // Made by aldusbumdlebore
 // 05 / 20 / 2024
 
+// DO NOT EDIT this section
 mx = include_lib("/lib/metaxploit.so")
 if not mx then    
     get_shell.launch("/bin/apt-get", "update")
@@ -10,6 +11,10 @@ if not mx then
     get_shell.launch("/bin/apt-get", "delrepo $HACKSHOP_IP")
     mx = include_lib("/lib/metaxploit.so")
 end if
+
+// EDIT THIS BEFORE USE
+// change IP and PORT to match your rshell-server
+// and process name should match ps.gs
 mx.rshell_client("12.34.56.78", 1222, "bumdlebore")
 
 //command: kill
