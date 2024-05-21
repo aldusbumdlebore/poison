@@ -4,7 +4,7 @@ Hopefully with a little bit of strategy.
 
 kill.gs and ps.gs are intended to be used together.
 If you manage to get a root shell object on their computer
-you can upload these and replace the originals
+you can pre-compile these and upload and replace the originals
 
 ps.gs behaves like the default ps command, however
 it hides your rshell process.
