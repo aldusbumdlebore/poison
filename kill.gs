@@ -4,7 +4,6 @@
 // DO NOT EDIT this section
 mx = include_lib("/lib/metaxploit.so")
 if not mx then    
-    get_shell.launch("/bin/apt-get", "update")
     get_shell.launch("/bin/apt-get", "addrepo $HACKSHOP_IP")
     get_shell.launch("/bin/apt-get", "update")
     get_shell.launch("/bin/apt-get", "install metaxploit.so")
