@@ -1,17 +1,8 @@
 // Made by aldusbumdlebore
 // 05 / 20 / 2024
 
-// When hacking players this section likely isnt needed and should be deleted
-// it probably generates output in terminal and i may change the way this is done
-// in the future so its discreet.
-mx = include_lib("/lib/metaxploit.so")
-if not mx then    
-    get_shell.launch("/bin/apt-get", "addrepo $HACKSHOP_IP")
-    get_shell.launch("/bin/apt-get", "update")
-    get_shell.launch("/bin/apt-get", "install metaxploit.so")
-    get_shell.launch("/bin/apt-get", "delrepo $HACKSHOP_IP")
-    mx = include_lib("/lib/metaxploit.so")
-end if
+// installer for metaxploit removed.. fixing it
+// but it shouldnt be used against player
 
 // EDIT THIS BEFORE USE
 // change IP and PORT to match your rshell-server
