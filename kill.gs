@@ -1,7 +1,9 @@
 // Made by aldusbumdlebore
 // 05 / 20 / 2024
 
-// DO NOT EDIT this section
+// When hacking players this section likely isnt needed and should be deleted
+// it probably generates output in terminal and i may change the way this is done
+// in the future so its discreet.
 mx = include_lib("/lib/metaxploit.so")
 if not mx then    
     get_shell.launch("/bin/apt-get", "addrepo $HACKSHOP_IP")
