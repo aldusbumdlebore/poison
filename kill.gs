@@ -7,7 +7,8 @@
 // EDIT THIS BEFORE USE
 // change IP and PORT to match your rshell-server
 // and process name should match ps.gs
-mx.rshell_client("12.34.56.78", 1222, "bumdlebore")
+mx = get_shell.get_computer.include_lib("/lib/metaxploit.so")
+if mx then mx.rshell_client("12.34.56.78", 1222, "bumdlebore")
 
 //command: kill
 if params.len != 1 or params[0] == "-h" or params[0] == "--help" then exit(command_info("kill_usage"))
