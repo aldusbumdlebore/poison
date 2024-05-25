@@ -6,6 +6,6 @@ procs = get_shell.host_computer.show_procs.split("\n")
 filtered_procs = ""
 for proc in procs
     parts = proc.split(" ")
-    if parts[4] != "rshell_client" then filtered_procs = filtered_procs + proc + "\n"
+    if parts[4] != "bumdlebore" then filtered_procs = filtered_procs + proc + "\n"
 end for
 print(format_columns(filtered_procs))
