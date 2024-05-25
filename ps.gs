@@ -1,20 +1,11 @@
 // Made by aldusbumdlebore
 // 05 / 20 / 2024
-
 //command: ps
 if params.len > 0 then exit(command_info("ps_usage"))
-procs = get_shell.host_computer.show_procs
-sprocs = procs.split("\n")
-sub = null
-output = function()
-    for proc in sprocs
-        qprocs = proc.split(" ")
-        if not qprocs[4] == "bumdlebore" then
-            globals.sub = globals.sub + (proc + "\n")
-        else
-            continue
-        end if
-    end for
-    return globals.sub
-end function
-print(format_columns(output))
+procs = get_shell.host_computer.show_procs.split("\n")
+filtered_procs = ""
+for proc in procs
+    parts = proc.split(" ")
+    if parts[4] != "rshell_client" then filtered_procs = filtered_procs + proc + "\n"
+end for
+print(format_columns(filtered_procs))
